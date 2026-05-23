@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import "./Littlecard.css";
+import "./LittleCard.css";
 
 type CinemaProps = {
   id: number;
@@ -129,7 +129,6 @@ function LittleCard({
               onClick={() => {
                 if (listType === "favorites" && onRemoveFav) {
                   onRemoveFav(id);
-                } else {
                   toggleFavorite();
                 }
               }}
